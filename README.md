@@ -34,8 +34,8 @@ This application is built using **HTML5, CSS3, and Vanilla JavaScript** with a f
 
 ## Tech Stack
 
-* **HTML5**: Semantic markup for accessibility and SEO
-* **CSS3**: Modern styling with Flexbox and Grid layouts
+* **HTML**: Semantic markup for accessibility and SEO
+* **CSS**: Modern styling with Flexbox and Grid layouts
 * **Vanilla JavaScript**: No dependencies, lightweight and fast
 * **Google Fonts**: Poppins font family for typography
 * **Responsive Design**: Mobile-first approach with media queries
