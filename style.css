@@ -122,6 +122,8 @@ main {
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-subtitle {
@@ -204,13 +206,13 @@ main {
     margin-top: 2rem;
     border-radius: 12px;
     overflow: hidden;
-    position: absolute;
-    bottom: -25%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 200px;
-    width: 600px !important;
+    position: relative;
+    margin: 2rem auto;
+    height: 300px;
+    width: 100% !important;
+    max-width: 600px;
     border: solid 4px #F5F5F5;
+    z-index: 1;
 }
 .hero-image img{
     object-fit: cover;
@@ -453,7 +455,7 @@ main {
 .carousel-section {
     padding: 4rem 2rem;
     margin: 2rem 0;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
 .carousel-container {
@@ -605,7 +607,7 @@ main {
 
 /* Risk Section */
 .risk-section {
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 4rem 2rem;
     margin: 2rem 0;
 }
@@ -890,9 +892,26 @@ main {
         padding: 0.9rem 1.5rem;
     }
 
+    /* Fixed Hero Image */
     .hero-image {
-        top: 1rem;
-        border-radius: 10px;
+        width: 100% !important;
+        height: 200px;
+        margin-bottom: -2rem;
+    }
+
+    /* Fixed Check Skin Padding */
+    .check-skin-hero .hero-content {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .content {
+        padding: 1rem 1.5rem;
     }
 
     .stats-section {
@@ -969,6 +988,11 @@ main {
 
     .spot-cancer-intro {
         text-align: center;
+    }
+
+    .risk-content {
+        flex-direction: column-reverse;
+        padding: 0 1rem; 
     }
 
     .early-detection-section {
