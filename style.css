@@ -31,34 +31,32 @@ main {
     flex: 1;
 }
 
+/* --- NAVBAR STYLES --- */
 .navbar {
     background-color: #F5F5F5;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-}
-.navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    height: 70px;
+    display: flex;
+    align-items: center;
 }
-
 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: .5rem 2rem;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .nav-logo a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--primary-color);
     text-decoration: none;
@@ -80,7 +78,7 @@ main {
     color: #2F4157;
     text-decoration: none;
     font-weight: 500;
-    font-size: .8rem;
+    font-size: 0.9rem;
     transition: color 0.3s ease;
     padding: 0.5rem 0;
     display: block;
@@ -105,16 +103,43 @@ main {
     border-radius: 3px;
 }
 
+/* --- MAIN CONTENT & HERO --- */
 .content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     width: 100%;
     background: #F5F5F5;
-    
+    margin-top: 70px;
 }
 
+.hero-section {
+    background-color: #E0E5E8;
+    border-radius: 20px;
+    padding: 3rem;
+    margin: 2rem 0;
+    align-items: center;
+    position: relative;
+}
 
+.hero-image {
+    margin-top: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative; 
+    margin: 2rem auto;
+    height: 300px;
+    width: 100% !important;
+    max-width: 600px;
+    border: solid 4px #F5F5F5;
+    z-index: 1;
+}
+
+.hero-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
 
 .hero-content {
     text-align: center;
@@ -133,6 +158,7 @@ main {
     margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: 1rem; 
 }
 
 .hero-title {
@@ -168,7 +194,7 @@ main {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem; 
 }
 
 .btn-primary {
@@ -193,34 +219,7 @@ main {
     box-shadow: 0 4px 12px rgba(200, 217, 230, 0.4);
 }
 
-.hero-section {
-    background-color: #E0E5E8;
-    border-radius: 20px;
-    padding: 3rem;
-    margin: 2rem 0;
-    align-items: center;
-    position: relative;
-}
-
-.hero-image {
-    margin-top: 2rem;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    margin: 2rem auto;
-    height: 300px;
-    width: 100% !important;
-    max-width: 600px;
-    border: solid 4px #F5F5F5;
-    z-index: 1;
-}
-.hero-image img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-/* Statistics Section */
+/* --- STATISTICS SECTION --- */
 .stats-section {
     padding: 4rem 0;
     margin: 2rem 0;
@@ -321,7 +320,7 @@ main {
     color: var(--primary-color);
 }
 
-/* How to Spot Cancer Section */
+/* --- SPOT CANCER SECTION --- */
 .spot-cancer-section {
     padding: 4rem 2rem;
     margin: 2rem 0;
@@ -451,11 +450,11 @@ main {
     color: var(--text-color);
 }
 
-/* Carousel Section */
+/* --- CAROUSEL SECTION --- */
 .carousel-section {
     padding: 4rem 2rem;
     margin: 2rem 0;
-    background-color: transparent;
+    background-color: transparent !important; 
 }
 
 .carousel-container {
@@ -539,7 +538,7 @@ main {
     pointer-events: none;
 }
 
-/* Early Detection Section */
+/* --- EARLY DETECTION --- */
 .early-detection-section {
     background-color: #C7D9E566;
     padding: 4rem 2rem;
@@ -605,9 +604,9 @@ main {
     transform: translateY(0);
 }
 
-/* Risk Section */
+/* --- RISK SECTION --- */
 .risk-section {
-    background-color: transparent;
+    background-color: transparent !important;
     padding: 4rem 2rem;
     margin: 2rem 0;
 }
@@ -672,7 +671,7 @@ main {
     object-fit: cover;
 }
 
-/* Footer */
+/* --- FOOTER --- */
 .footer {
     background-color: #f5f5f5;
     padding: 2rem 2rem;
@@ -692,7 +691,7 @@ main {
     opacity: 0.8;
 }
 
-/* Check Skin Page */
+/* --- CHECK SKIN PAGE SPECIFIC --- */
 .check-skin-hero .hero-content {
     padding-top: 120px;
     display: grid;
@@ -737,7 +736,7 @@ main {
     max-width: 480px;
 }
 
-/* Phone Mockup */
+/* --- PHONE MOCKUP --- */
 .phone-mockup {
   background: linear-gradient(145deg, #2d3748, #2F4157);
   border-radius: 40px;
@@ -765,7 +764,8 @@ main {
   margin: 0 auto;
 }
 
-/* Responsive Design */
+/* --- RESPONSIVE DESIGN --- */
+
 @media screen and (max-width: 1024px) {
     .hero-title {
         font-size: 2.5rem;
@@ -812,7 +812,8 @@ main {
 
 @media screen and (max-width: 768px) {
     .nav-container {
-        padding: 1rem;
+        padding: 0 1.5rem;
+        height: 100%;
     }
 
     .nav-menu {
@@ -820,13 +821,14 @@ main {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #F5F5F5; 
         width: 100%;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
-        gap: 0;
+        gap: 1.5rem; 
+        height: auto;
     }
 
     .nav-menu.active {
@@ -834,13 +836,17 @@ main {
     }
 
     .nav-item {
-        margin: 1rem 0;
+        margin: 0;
+        width: 100%;
     }
 
     .nav-link {
-        padding: 1rem;
+        padding: 0.8rem;
         display: block;
         width: 100%;
+        font-size: 1.1rem; 
+        font-weight: 600;
+        color: var(--primary-color);
     }
 
     .nav-toggle {
@@ -864,46 +870,56 @@ main {
     }
 
     .hero-section {
-        padding: 2rem 1.5rem 0 1.5rem;
+        padding: 1.5rem 1rem 2rem 1rem; 
         margin: 1rem 0;
         border-radius: 16px;
     }
 
     .hero-content {
         text-align: center;
+        margin-top: 1rem;
     }
 
     .hero-title {
         font-size: 2rem;
+        margin-top: 0.5rem;
     }
 
     .hero-description {
         font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        display: block;
     }
 
     .hero-buttons {
         justify-content: center;
         flex-direction: column;
         width: 100%;
+        gap: 1rem;
     }
 
     .hero-btn {
         width: 100%;
         padding: 0.9rem 1.5rem;
+        margin-bottom: 0;
     }
 
-    /* Fixed Hero Image */
     .hero-image {
         width: 100% !important;
-        height: 200px;
-        margin-bottom: -2rem;
+        height: 220px;
+        margin: 0 auto 1rem auto; 
+        position: relative;
     }
 
-    /* Fixed Check Skin Padding */
     .check-skin-hero .hero-content {
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -911,7 +927,8 @@ main {
     }
 
     .content {
-        padding: 1rem 1.5rem;
+        padding: 1rem;
+        margin-top: 80px; 
     }
 
     .stats-section {
@@ -947,7 +964,7 @@ main {
     }
 
     .carousel-section {
-        padding: 3rem 1.5rem;
+        padding: 3rem 1rem;
     }
 
     .carousel-slide {
@@ -962,7 +979,7 @@ main {
     }
 
     .spot-cancer-section {
-        padding: 3rem 1.5rem;
+        padding: 3rem 1rem;
     }
 
     .spot-cancer-container {
@@ -992,11 +1009,11 @@ main {
 
     .risk-content {
         flex-direction: column-reverse;
-        padding: 0 1rem; 
+        padding: 0 0.5rem; 
     }
 
     .early-detection-section {
-        padding: 3rem 1.5rem;
+        padding: 3rem 1rem;
     }
 
     .early-detection-heading {
@@ -1018,8 +1035,7 @@ main {
     }
 
     .hero-section {
-        padding: 1.5rem 1rem 0 1rem;
-        margin: 0.5rem 0;
+        padding: 1.5rem 1rem;
     }
 
     .hero-title {
